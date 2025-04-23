@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger menu</title>
+    <!-- Import de Font Awesome pour l'icône de menu burger (les 3 barres verticales) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Modal de langues -->
+      <div class="languages-container">
+        <span class="languages-link dropdown-toggle" id="languages-toggle">LANGUE</span>
+        <div class="languages-modal" id="languages-modal">
+          <div class="languages-option">English</div>
+          <div class="languages-option">Français</div>
+        </div>
+      </div>
+
+      <nav>
+        <h1><u>KILO SHOP</u></h1>
+        <div class="nav-links">
+          <a href="#">Concept</a>
+          <a href="#">Je dépose</a>
+          <a href="#">Notre mission</a>
+          <a href="#">Actus</a>
+          <a href="#">Shops</a>
+          <a href="#">Looks</a>
+        </div>
+        <div class="burger"><i class="fas fa-bars"></i></div>
+      </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" id="close-btn"><i class="fas fa-times"></i></div>
+      <a href="#">Concept</a>
+      <a href="#">Je dépose</a>
+      <a href="#">Notre mission</a>
+      <a href="#">Actus</a>
+      <a href="#">Shops</a>
+      <a href="#">Looks</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

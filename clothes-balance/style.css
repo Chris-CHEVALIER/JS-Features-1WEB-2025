@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+}
+
+#canvas-container {
+  position: relative;
+  height: 90vh;
+}
+
+#price-display {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  border-top: 2px solid #ccc;
+}

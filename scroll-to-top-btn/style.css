@@ -1,0 +1,19 @@
+/* Style de l'icône, masqué de base */
+.fa-arrow-up {
+  display: none;
+  background-color: #666;
+  border-radius: 100%;
+  color: #fff; /* Couleur de la flêche */ 
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  position: fixed; /* Fixe l'élément en bas à droite de la page */
+  bottom: 15px;
+  right: 15px;
+}
+
+/* Léger grossissement et changement de couleur, en 0.5s (transition), au passage de la souris */
+.fa-arrow-up:hover {
+  background-color: #000;
+  transform: scale(1.1);
+}

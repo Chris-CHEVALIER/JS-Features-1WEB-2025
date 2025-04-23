@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.clothes-bin {
+  width: 200px;
+  border: 2px dashed black;
+  padding: 10px;
+  background: white;
+}
+
+.clothes-bin img {
+  width: 100px;
+  margin: 10px;
+}
+
+.character-zone {
+  position: relative;
+  width: 300px;
+  height: 500px;
+}
+
+.character {
+  width: 100%;
+  z-index: 0;
+}
+
+.clothing-slot {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+
+.clothing {
+  cursor: grab;
+}
+
+#slot-tshirt {
+  top: 100px;
+  left: 100px;
+}
+
+#slot-pants {
+  top: 250px;
+  left: 100px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carousel simple</title>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <!-- Slides du carousel avec image et description -->
+      <div class="slides fade">
+        <img src="https://picsum.photos/id/1015/600/400" />
+        <div class="text">Description</div>
+      </div>
+
+      <div class="slides fade">
+        <img src="https://picsum.photos/id/1016/600/400" />
+        <div class="text">Description</div>
+      </div>
+
+      <div class="slides fade">
+        <img src="https://picsum.photos/id/1018/600/400" />
+        <div class="text">Description</div>
+      </div>
+
+      <!-- Boutons précédent et suivant du carousel -->
+      <a class="prev" id="prev">❮</a>
+      <a class="next" id="next">❯</a>
+    </div>
+    <br />
+
+    <!-- Points de suivi du carousel -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  max-width: 800px;
+  cursor: grab;
+  overflow: hidden; /* Masque ce qui déborde des 800px de large */
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 10px;
+  flex-shrink: 0;
+  pointer-events: none; /* important pour que le drag fonctionne en Desktop */
+}
+
+.carousel img.left {
+  transform: rotateY(40deg) scale(0.9);
+}
+
+.carousel img.right {
+  transform: rotateY(-40deg) scale(0.9);
+}

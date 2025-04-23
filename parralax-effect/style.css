@@ -1,0 +1,85 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s;
+}
+
+.overlay-black {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.hero {
+  position: relative;
+  height: 200vh;
+  z-index: 2;
+}
+
+.logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.text-block {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.title {
+  font-size: 3em;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.description {
+  margin-top: 20px;
+  max-width: 600px;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.next {
+  background-color: black;
+  color: white;
+  padding: 150px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}

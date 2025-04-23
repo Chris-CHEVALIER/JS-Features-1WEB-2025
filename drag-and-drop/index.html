@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habillage drag and drop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clothes-bin" id="clothes-bin">
+        <h2>Bac à vêtements</h2>
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/011/979/843/small_2x/red-t-shirt-illustration-png.png"
+          class="clothing"
+          draggable="true"
+          data-type="tshirt"
+          width="100px"
+        />
+        <img
+          src="https://png.pngtree.com/png-vector/20230131/ourmid/pngtree-cartoon-jeans-pants-png-image_6580737.png"
+          class="clothing"
+          draggable="true"
+          data-type="pants"
+          width="100px"
+        />
+      </div>
+
+      <div class="character-zone" id="character-zone">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/035/576/053/small/ai-generated-3d-cartoon-character-a-cute-student-boy-isolated-transparent-background-generated-with-ai-png.png"
+          class="character"
+        />
+        <div class="clothing-slot" id="slot-tshirt"></div>
+        <div class="clothing-slot" id="slot-pants"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
