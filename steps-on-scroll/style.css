@@ -1,0 +1,44 @@
+.hero-banner {
+  width: 100vw;
+  height: 100vh;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 30%;
+  border-left: 1px solid black;
+  padding: 15px;
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.col-1 {
+  border-left: none;
+}
+
+.col-2 {
+  margin-top: 15vh;
+}
+
+.col-3 {
+  margin-top: 30vh;
+}
+
+.col-4 {
+  margin-top: 45vh;
+}
+
+.col img {
+  max-height: 250px;
+  margin: 15px 0px;
+}
